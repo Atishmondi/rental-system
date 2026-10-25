@@ -1,8 +1,14 @@
-# Rental architecture decision study
+# Rental System
 
 A free, local experiment comparing a coupled rental application, a modular application and independently running invoicing. The question is whether allowing bookings to continue during invoice failures is worth delayed invoice consistency and extra recovery machinery.
 
 **Status:** working command-line research prototype. Synthetic fixtures; AI-assisted implementation. This repository does not establish independent student proficiency, enterprise scalability or admissions outcomes.
+
+## Demo
+
+[![Watch the Rental System demo: an invoice worker crashes, the booking survives, and a retry recovers delivery](docs/media/rental-system-preview.jpg)](docs/media/rental-system-demo.mp4)
+
+**[Watch the 22-second demo](docs/media/rental-system-demo.mp4)** — the separated version recovers from an invoice-worker exit without duplicating the invoice. Synthetic local test; music and sound effects, no narration.
 
 ## Start here
 
