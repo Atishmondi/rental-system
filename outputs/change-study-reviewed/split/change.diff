@@ -1,0 +1,11 @@
+--- before/rental/pricing.py
++++ after/rental/pricing.py
+@@ -25,6 +25,8 @@
+         minor = int(''.join(str(digit) for digit in digits)) * (10 ** exponent)
+         days = (last - first).days
+         total = minor * days
++        if policy == 'weekly-discount' and days >= 7:
++            total = (total * 90 + 50) // 100  # exact positive half-up rounding
+         amount = total
+         if not 0 < amount <= 9223372036854775807 or minor > 9223372036854775807:
+             raise ValueError('Amount exceeds supported range')

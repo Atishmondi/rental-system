@@ -1,0 +1,21 @@
+__pycache__/
+*.pyc
+runs/
+.venv/
+.DS_Store
+
+# Secrets and local configuration
+.env
+.env.*
+!.env.example
+
+# Video working files
+brag-output*/
+rental-explainer/
+node_modules/
+.hyperframes/
+
+# Extra experiment runs
+outputs/change-study/
+outputs/my-change-run/
+outputs/my-run/

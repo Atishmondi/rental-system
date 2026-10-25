@@ -1,0 +1,261 @@
+{
+  "generated_at": "2026-10-15T11:58:11.711444+00:00",
+  "python": "3.9.6",
+  "platform": "macOS-26.5.2-arm64-arm-64bit",
+  "provenance": "Controlled reconstructed baseline: remove the two discount lines from current pricing.py. Not historical development or independent implementations.",
+  "architectures": [
+    {
+      "mode": "coupled",
+      "changed_files": [
+        "pricing.py"
+      ],
+      "added_lines": 2,
+      "removed_lines": 0,
+      "source_sha256": {
+        "before": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "__main__.py": "2d37b8349a9372eb5554a0969da6bf393d90c5c1064a04794083e15108889083",
+          "app.py": "3e9edae30566bd3cec00ca5fe0952b98c558384af6e35666ea9735f4607f5bb5",
+          "change_study.py": "79330826f1606ee4f858b3b24bd3fd97d3f949d82a072d9798a990199981575c",
+          "experiment.py": "4a1f3f79a1f3fb274e22b7f9ee283d81bc33149c95598c39be3551ce2bf01556",
+          "invoicing.py": "c211982f0a9ac147af5821abf5e0681a5b8cdd7a2217c713fbc90c403fad81be",
+          "migration.py": "120966598f7bf08c00d17646fdc455a16b491368afcada92c4303c7d25232fc1",
+          "pricing.py": "d6be1843effc1bd6ef40e4e7ea22646f388fdd6fdf03cb0cbbb5f53842fbf6f1",
+          "storage.py": "6c90a2c75284580575cd0c272aab28d76db096e11452ab05a6a558a95ca5f833",
+          "transport.py": "decec8f82bc9b9a3377da6736f160e5a4017566faa742f9f4b471ccb84626ba9",
+          "worker.py": "7ea742e81215263e7dec1a48edaadd34498fb72aecf9d0ff475c2499926149b1"
+        },
+        "after": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "__main__.py": "2d37b8349a9372eb5554a0969da6bf393d90c5c1064a04794083e15108889083",
+          "app.py": "3e9edae30566bd3cec00ca5fe0952b98c558384af6e35666ea9735f4607f5bb5",
+          "change_study.py": "79330826f1606ee4f858b3b24bd3fd97d3f949d82a072d9798a990199981575c",
+          "experiment.py": "4a1f3f79a1f3fb274e22b7f9ee283d81bc33149c95598c39be3551ce2bf01556",
+          "invoicing.py": "c211982f0a9ac147af5821abf5e0681a5b8cdd7a2217c713fbc90c403fad81be",
+          "migration.py": "120966598f7bf08c00d17646fdc455a16b491368afcada92c4303c7d25232fc1",
+          "pricing.py": "e27c3f92a5bc3b4cdbf542f40401a8d2e02fe47d73c2a6e788f6f8828505a59f",
+          "storage.py": "6c90a2c75284580575cd0c272aab28d76db096e11452ab05a6a558a95ca5f833",
+          "transport.py": "decec8f82bc9b9a3377da6736f160e5a4017566faa742f9f4b471ccb84626ba9",
+          "worker.py": "7ea742e81215263e7dec1a48edaadd34498fb72aecf9d0ff475c2499926149b1"
+        }
+      },
+      "runs": [
+        {
+          "stage": "before",
+          "action": "seed",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/coupled/upgrade-data",
+            "coupled",
+            "seed"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/coupled/before",
+          "returncode": 0,
+          "stdout": "{\"historical\": 350000}\n",
+          "stderr": ""
+        },
+        {
+          "stage": "before",
+          "action": "requirement",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/coupled/baseline-probe-data",
+            "coupled",
+            "requirement"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/coupled/before",
+          "returncode": 1,
+          "stdout": "{\"historical\": 350000, \"new\": 350000, \"rounded\": 35, \"six_days\": 300000}\n",
+          "stderr": ""
+        },
+        {
+          "stage": "after",
+          "action": "requirement",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/coupled/upgrade-data",
+            "coupled",
+            "requirement"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/coupled/after",
+          "returncode": 0,
+          "stdout": "{\"historical\": 350000, \"new\": 315000, \"rounded\": 32, \"six_days\": 300000}\n",
+          "stderr": ""
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "modular",
+      "changed_files": [
+        "pricing.py"
+      ],
+      "added_lines": 2,
+      "removed_lines": 0,
+      "source_sha256": {
+        "before": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "__main__.py": "2d37b8349a9372eb5554a0969da6bf393d90c5c1064a04794083e15108889083",
+          "app.py": "3e9edae30566bd3cec00ca5fe0952b98c558384af6e35666ea9735f4607f5bb5",
+          "change_study.py": "79330826f1606ee4f858b3b24bd3fd97d3f949d82a072d9798a990199981575c",
+          "experiment.py": "4a1f3f79a1f3fb274e22b7f9ee283d81bc33149c95598c39be3551ce2bf01556",
+          "invoicing.py": "c211982f0a9ac147af5821abf5e0681a5b8cdd7a2217c713fbc90c403fad81be",
+          "migration.py": "120966598f7bf08c00d17646fdc455a16b491368afcada92c4303c7d25232fc1",
+          "pricing.py": "d6be1843effc1bd6ef40e4e7ea22646f388fdd6fdf03cb0cbbb5f53842fbf6f1",
+          "storage.py": "6c90a2c75284580575cd0c272aab28d76db096e11452ab05a6a558a95ca5f833",
+          "transport.py": "decec8f82bc9b9a3377da6736f160e5a4017566faa742f9f4b471ccb84626ba9",
+          "worker.py": "7ea742e81215263e7dec1a48edaadd34498fb72aecf9d0ff475c2499926149b1"
+        },
+        "after": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "__main__.py": "2d37b8349a9372eb5554a0969da6bf393d90c5c1064a04794083e15108889083",
+          "app.py": "3e9edae30566bd3cec00ca5fe0952b98c558384af6e35666ea9735f4607f5bb5",
+          "change_study.py": "79330826f1606ee4f858b3b24bd3fd97d3f949d82a072d9798a990199981575c",
+          "experiment.py": "4a1f3f79a1f3fb274e22b7f9ee283d81bc33149c95598c39be3551ce2bf01556",
+          "invoicing.py": "c211982f0a9ac147af5821abf5e0681a5b8cdd7a2217c713fbc90c403fad81be",
+          "migration.py": "120966598f7bf08c00d17646fdc455a16b491368afcada92c4303c7d25232fc1",
+          "pricing.py": "e27c3f92a5bc3b4cdbf542f40401a8d2e02fe47d73c2a6e788f6f8828505a59f",
+          "storage.py": "6c90a2c75284580575cd0c272aab28d76db096e11452ab05a6a558a95ca5f833",
+          "transport.py": "decec8f82bc9b9a3377da6736f160e5a4017566faa742f9f4b471ccb84626ba9",
+          "worker.py": "7ea742e81215263e7dec1a48edaadd34498fb72aecf9d0ff475c2499926149b1"
+        }
+      },
+      "runs": [
+        {
+          "stage": "before",
+          "action": "seed",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/modular/upgrade-data",
+            "modular",
+            "seed"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/modular/before",
+          "returncode": 0,
+          "stdout": "{\"historical\": 350000}\n",
+          "stderr": ""
+        },
+        {
+          "stage": "before",
+          "action": "requirement",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/modular/baseline-probe-data",
+            "modular",
+            "requirement"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/modular/before",
+          "returncode": 1,
+          "stdout": "{\"historical\": 350000, \"new\": 350000, \"rounded\": 35, \"six_days\": 300000}\n",
+          "stderr": ""
+        },
+        {
+          "stage": "after",
+          "action": "requirement",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/modular/upgrade-data",
+            "modular",
+            "requirement"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/modular/after",
+          "returncode": 0,
+          "stdout": "{\"historical\": 350000, \"new\": 315000, \"rounded\": 32, \"six_days\": 300000}\n",
+          "stderr": ""
+        }
+      ],
+      "passed": true
+    },
+    {
+      "mode": "split",
+      "changed_files": [
+        "pricing.py"
+      ],
+      "added_lines": 2,
+      "removed_lines": 0,
+      "source_sha256": {
+        "before": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "__main__.py": "2d37b8349a9372eb5554a0969da6bf393d90c5c1064a04794083e15108889083",
+          "app.py": "3e9edae30566bd3cec00ca5fe0952b98c558384af6e35666ea9735f4607f5bb5",
+          "change_study.py": "79330826f1606ee4f858b3b24bd3fd97d3f949d82a072d9798a990199981575c",
+          "experiment.py": "4a1f3f79a1f3fb274e22b7f9ee283d81bc33149c95598c39be3551ce2bf01556",
+          "invoicing.py": "c211982f0a9ac147af5821abf5e0681a5b8cdd7a2217c713fbc90c403fad81be",
+          "migration.py": "120966598f7bf08c00d17646fdc455a16b491368afcada92c4303c7d25232fc1",
+          "pricing.py": "d6be1843effc1bd6ef40e4e7ea22646f388fdd6fdf03cb0cbbb5f53842fbf6f1",
+          "storage.py": "6c90a2c75284580575cd0c272aab28d76db096e11452ab05a6a558a95ca5f833",
+          "transport.py": "decec8f82bc9b9a3377da6736f160e5a4017566faa742f9f4b471ccb84626ba9",
+          "worker.py": "7ea742e81215263e7dec1a48edaadd34498fb72aecf9d0ff475c2499926149b1"
+        },
+        "after": {
+          "__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+          "__main__.py": "2d37b8349a9372eb5554a0969da6bf393d90c5c1064a04794083e15108889083",
+          "app.py": "3e9edae30566bd3cec00ca5fe0952b98c558384af6e35666ea9735f4607f5bb5",
+          "change_study.py": "79330826f1606ee4f858b3b24bd3fd97d3f949d82a072d9798a990199981575c",
+          "experiment.py": "4a1f3f79a1f3fb274e22b7f9ee283d81bc33149c95598c39be3551ce2bf01556",
+          "invoicing.py": "c211982f0a9ac147af5821abf5e0681a5b8cdd7a2217c713fbc90c403fad81be",
+          "migration.py": "120966598f7bf08c00d17646fdc455a16b491368afcada92c4303c7d25232fc1",
+          "pricing.py": "e27c3f92a5bc3b4cdbf542f40401a8d2e02fe47d73c2a6e788f6f8828505a59f",
+          "storage.py": "6c90a2c75284580575cd0c272aab28d76db096e11452ab05a6a558a95ca5f833",
+          "transport.py": "decec8f82bc9b9a3377da6736f160e5a4017566faa742f9f4b471ccb84626ba9",
+          "worker.py": "7ea742e81215263e7dec1a48edaadd34498fb72aecf9d0ff475c2499926149b1"
+        }
+      },
+      "runs": [
+        {
+          "stage": "before",
+          "action": "seed",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/split/upgrade-data",
+            "split",
+            "seed"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/split/before",
+          "returncode": 0,
+          "stdout": "{\"historical\": 350000}\n",
+          "stderr": ""
+        },
+        {
+          "stage": "before",
+          "action": "requirement",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/split/baseline-probe-data",
+            "split",
+            "requirement"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/split/before",
+          "returncode": 1,
+          "stdout": "{\"historical\": 350000, \"new\": 350000, \"rounded\": 35, \"six_days\": 300000}\n",
+          "stderr": ""
+        },
+        {
+          "stage": "after",
+          "action": "requirement",
+          "command": [
+            "/Library/Developer/CommandLineTools/usr/bin/python3",
+            "check_change.py",
+            "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/split/upgrade-data",
+            "split",
+            "requirement"
+          ],
+          "cwd": "/Users/atishmondi/Documents/1st project for masters/outputs/change-study-reviewed/split/after",
+          "returncode": 0,
+          "stdout": "{\"historical\": 350000, \"new\": 315000, \"rounded\": 32, \"six_days\": 300000}\n",
+          "stderr": ""
+        }
+      ],
+      "passed": true
+    }
+  ],
+  "passed": true
+}
