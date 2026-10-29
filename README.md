@@ -6,9 +6,9 @@ A free, local experiment comparing a coupled rental application, a modular appli
 
 ## Demo
 
-[![Watch the Rental System demo: an invoice worker crashes, the booking survives, and a retry recovers delivery](docs/media/rental-system-preview.jpg)](docs/media/rental-system-demo.mp4)
+https://github.com/user-attachments/assets/d3307f7f-81cb-4d73-95ed-a24533e87ac0
 
-**[Watch the 22-second demo](docs/media/rental-system-demo.mp4)** — the separated version recovers from an invoice-worker exit without duplicating the invoice. Synthetic local test; music and sound effects, no narration.
+The invoice worker crashes, the booking survives, and retrying delivery leaves one invoice with zero pending notifications. Synthetic local test.
 
 ## Start here
 
